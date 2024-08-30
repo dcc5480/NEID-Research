@@ -1,0 +1,10 @@
+astropy
+pyneid
+pandas
+snakemake
+solaster
+numpy
+sunpy
+drms
+matplotlib
+zeep
