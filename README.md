@@ -4,6 +4,11 @@ Absolute filepaths are used for many cases, so they will need to be modified. Fo
 ## NEID-Research.py
 Used for experimenting with data from the NEID telescope and processed STO data. See comments in file for details.
 
+## bin and requirements.txt
+This should be a symlink to "/storage/group/ebf11/default/software/anaconda3/bin/", which is the directory from which Python should be run: "./bin/python3" (run the code in "bin" to make the symlink). This Python should also be used to create a virtual environment with requirements.txt.
+- To create the virtual environment, run "python3 -m venv venv".
+- To activate it, run "./venv/bin/activate"
+
 ## test.py
 Includes functions:
 - fullPipeline (Removed, see older commits: old, not used anymore, see process1)
