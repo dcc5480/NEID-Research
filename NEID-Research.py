@@ -25,7 +25,9 @@ import SolAster.tools.rvs as rvs
 import SolAster.tools.utilities as utils
 from SolAster.tools.settings import *
 from SolAster.tools.plotting_funcs import hmi_plot
+import scipy
 from scipy.signal import savgol_filter
+
 
 def install(module):import subprocess;import sys;exec(f'subprocess.check_call([sys.executable, "-m", "pip", "install", "{module}"])')
 
