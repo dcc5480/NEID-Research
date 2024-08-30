@@ -1,14 +1,14 @@
 # NEID-Research
 
 ## NEID-Research.py
-Used for experimenting with data from the NEID telescope and processed STO data.
+Used for experimenting with data from the NEID telescope and processed STO data. See comments in file for details.
 
 ## test.py
 Includes functions:
-- fullPipeline (Old, not used anymore)
+- fullPipeline (Old, not used anymore, see process1)
   - Converts downloaded .fits files into data including modeled rv's.
 - fidoSearch
-  - Searches for and downloads .fits files.
+  - Searches for and downloads .fits files. Retries download where errors occur (won't retry successful downloads).
 - process
   - Checks for times with enough data and sends the .fits files to process1.
 - process1
@@ -37,4 +37,8 @@ Runs test21.py in a new job. Many of these jobs can run in parallel.
 ## test21.py
 Runs process on a 3-day group. If it finishes running process, then it renames its respective "lastProcess" file to "lastProcess_done" to indicate that multiMultiProcess doesn't need to try to continue processing this group. 
 
+## log (example file included here)
+Includes info from fidoSearch, including days downloaded and errors. This file tends to be large.
 
+## multilog (example file included here)
+Includes timestamps for when test21.py, multi.py, multiMultiProcess, and multiProcess start and finish. Generally best for troubleshooting issues.
