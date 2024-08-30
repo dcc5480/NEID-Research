@@ -5,8 +5,8 @@ Used for experimenting with data from the NEID telescope and processed STO data.
 
 ## test.py
 Includes functions:
-- fullPipeline (Old, not used anymore, see process1)
-  - Converts downloaded .fits files into data including modeled rv's.
+- fullPipeline (Removed, see older commits: old, not used anymore, see process1)
+  - Converts downloaded .fits files into data including modeled rv's. Is able to convert times without all three fits files (magnetogram, dopplergram, intensitygram) into partial data output.
 - fidoSearch
   - Searches for and downloads .fits files. Retries download where errors occur (won't retry successful downloads).
 - process
